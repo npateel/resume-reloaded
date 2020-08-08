@@ -1,0 +1,172 @@
+/** 
+  * styles.css
+  * The stylesheet for the website. This was my first serious attempt at making a website
+  * "Look good", and will be updated when I get more experience in CSS
+  */
+
+
+/* ===Globals=== */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+
+}
+html {
+    box-sizing: border-box;
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
+    background-color: #1C1E20;
+    color: #c9c9c9;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu Mono',  monospace;
+    font-weight: bold;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+
+}
+
+
+
+/* ===Header=== */
+header {
+    margin: 0 auto;
+    max-width: 1200px;    
+    height: 85vh;
+    font-size: 1.25vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+header h1 {
+    display: inline-block;
+}
+
+
+
+
+
+
+/* ===Nav=== */
+nav {
+    height: 10vh;
+    margin: 0px;
+    padding: 0px;
+}
+nav li {
+    display: inline;
+    padding: 10px 10px;
+    margin : 0px;
+}
+nav ul {
+    float: right;
+}
+nav a {
+    color: #c9c9c9;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #ffffff;
+}
+
+
+
+
+/* ===Main Content=== */
+article {
+    margin: 0 auto;
+    padding: 0 19em;
+    max-width: 1600px;
+   /*  background-color: #101112; */
+}
+
+article h1 {
+    padding-top: 2em;
+    font-size: 3em;
+    color: #ce537a;
+}
+
+article h2 {
+    font-size: 2em;
+    color: #4f97d7;
+}
+
+article h3 {
+    font-size: 1.5em;
+    color: #369465;
+}
+
+article h4 {
+    color: #ebb300;
+}
+
+
+/* ===Flex content=== */
+.highlight-box {
+    display: flex;
+    justify-content: center;
+}
+
+.highlight-section {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Colors */
+.class {
+    color: #4f97d7;
+    
+}
+.keyword {
+    color: #4f97d7;
+}
+.class-name {
+    color: #ce537a;
+    font-weight: bolder;
+}
+.comment {
+    color: #369465;
+}
+
+
+/* ===Media Queries=== */
+
+/* This ensures that the title size is capped to be a minimum of 20px */
+@media screen and (max-width: 100em) {
+    header {
+        font-size: 20px;
+    }
+}
+
+/* Small screens, around phone size */
+@media screen and (max-width: 43em) {
+    
+    /* Stacks the title and tagline directly above / belowo each other*/
+    header p {
+        padding-left: 0em;
+    }
+    
+    header h1 {
+        padding-right: 0em;
+    }
+    
+    .highlight-box {
+        display: block;
+    }
+}
