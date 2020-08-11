@@ -212,15 +212,15 @@ ol {
     justify-content: space-between;
 }
 
-.contact {
+#contact {
    font-size: 1.125rem;
 }
 
-.contact ul {
+#contact ul {
     list-style: none;
     font-size: 1.5rem;
 }
-.contact a {
+#contact a {
     color: #fff
 }
 
@@ -239,6 +239,7 @@ ol {
 .comment {
     color: #369465;
 }
+
 
 footer {
     border-top: solid;
