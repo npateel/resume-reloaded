@@ -33,6 +33,17 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 
 
 /* ===Header=== */
@@ -102,7 +113,7 @@ nav a:hover {
 article {
     padding: 0px 20px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
    /*  background-color: #101112; */
 }
 
@@ -125,12 +136,71 @@ article h3 {
 article h4 {
     color: #ebb300;
 }
+article p {
+    margin: 0.5em 0em;
+}
+
+ol {
+    list-style: disc
+}
+
+
+/* ===Project Section Styling=== */
+.featured-projects {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-project {
+    border: solid;
+    height: 36em;
+    width: 35em;
+    margin: 30px 10px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.featured-project img {
+    width: 100%;    
+}
+
+.featured-projects p {
+    height: 20%;
+    padding: 20px;
+}
+
+.button-group {
+    margin: 20px 10px;
+    position: absolute;
+    bottom: 0%;
+}
+
+.featured-projects button:disabled {
+    opacity: 100%;
+    background-color: #1C1E20;
+    padding: 10px 20px;
+    color: #ce537a;
+    border: #ce537a solid;
+    margin: 0px 5px;
+    border-radius: 3px;
+}
+
+.other-projects {
+    font-size: 1.125em
+}
 
 
 /* ===Flex content=== */
+
+.subsection-box {
+    margin-top: 0px;
+}
 .highlight-box {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .highlight-section {
@@ -142,6 +212,17 @@ article h4 {
     justify-content: space-between;
 }
 
+.contact {
+   font-size: 1.125rem;
+}
+
+.contact ul {
+    list-style: none;
+    font-size: 1.5rem;
+}
+.contact a {
+    color: #fff
+}
 
 /* Colors */
 .class {
@@ -159,6 +240,15 @@ article h4 {
     color: #369465;
 }
 
+footer {
+    border-top: solid;
+    margin-top: 50px;
+    background-color: #111;
+    height: 1em;
+    min-height: 3.5em;
+    text-align: center;
+    padding: 20px;
+}
 
 /* ===Media Queries=== */
 
