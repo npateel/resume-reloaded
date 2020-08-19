@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5a0b1ed384.js" crossorigin="anonymous"></script>
+    <script src="scripts/button.js"></script>
     <title>Nikhil Pateel</title>
 </head>
 <body>
@@ -14,12 +17,14 @@
 
 
     <nav>
-        <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#coursework">Coursework</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact me!</a></li>
+        <ul class="menu">
+            <li class="logo"><a href="#">Nikhil Pateel</a></li>
+            <li class="item"><a href="#education">Education</a></li>
+            <li class="item"><a href="#coursework">Coursework</a></li>
+            <li class="item"><a href="#experience">Experience</a></li>
+            <li class="item"><a href="#projects">Projects</a></li>
+            <li class="item"><a href="#contact">Contact me!</a></li>
+            <li class="toggle"><a href="#"><span class="bars"></span></a></li>
 	</ul>
     </nav>
     <header>
@@ -318,10 +323,10 @@
             <section id="contact">
                 <h2 class="section-title">Contact</h2>
                 Please reach me at: <br>
-                <ul>
-                    <li><a href="mailto:npateel@caldrix.com">Email</a></li>
-                    <li><a href="https://github.com/npateel/">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/nikhil-pateel">LinkedIn</a></li>
+                <ul class="contact-list">
+                    <li><a href="mailto:npateel@caldrix.com"><i class="fas fa-envelope"></i>Email</a></li>
+                    <li><a href="https://github.com/npateel/"><i class="fab fa-github"></i>Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/nikhil-pateel"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
                 </ul>
 
             </section>

@@ -66,17 +66,7 @@ header h1 {
     display: inline-block;
 }
 
-
-
-
-
-
-
-
-/* ===Nav=== */
 nav {
-    height: 1em;
-    min-height: 3.25em;
     margin: 0px;
     padding: 0px;
     background-color: #111;
@@ -85,23 +75,88 @@ nav ul {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:  flex-end;
-    align-content: center;
-    align-items: center;
 }
 
 nav li {
-    max-width: 120px;
-    flex: 1;
-    display: inline;
+    display: block;
+    border-bottom: 2px solid #444;
+
 }
 
 nav a {
     color: #c9c9c9;
     text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
 }
+
+nav .logo {
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+nav .toggle {
+    cursor: pointer;
+}
+
+nav .bars {
+    background: #c1c1c1;
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    position: relative;
+    
+}
+
+.bars::before, .bars::after {
+    background: #c1c1c1;
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    position: absolute;
+    content: "";
+    
+}
+
+.bars::before {
+    top: 5px;
+}
+.bars::after {
+    top: -5px;
+}
+
+
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.toggle {
+    order: 1;
+}
+
+.item {
+    order: 2;
+    width: 100%;
+    background-color: #1e1e1e;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+
+
+
+
+/* ===Nav=== */
+
 nav a:hover {
     color: #ffffff;
 }
@@ -265,6 +320,11 @@ ol {
     color: #fff
 }
 
+
+.contact-list i {
+    padding-right: 0.5em
+}
+
 /* Colors */
 .class {
     color: #4f97d7;
@@ -301,6 +361,54 @@ footer {
     }
 }
 
+@media screen and (min-width: 54em) {
+        nav {
+        height: 2em;
+        min-height: 4.25em;
+        margin: 0px;
+        padding: 0px;
+        background-color: #111;
+    }
+    .menu {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
+    }
+
+    nav li {
+        display: inline;
+        border: none;
+
+    }
+
+    nav a {
+        color: #c9c9c9;
+        text-decoration: none;
+    }
+    
+    .toggle {
+        display: none;
+    }
+    .item {
+        width: 1px;
+        max-width: 10em;
+        background-color: inherit;
+        order: 1;
+        width: auto;
+        display: block;
+    }
+    
+    .logo {
+        flex: 1;
+        order: 0;
+        
+    }
+}
+
 /* Small screens, around phone size */
 @media screen and (max-width: 43em) {
     
@@ -312,6 +420,7 @@ footer {
     header h1 {
         padding-right: 0em;
     }
+    
     
     .highlight-box {
         display: block;
