@@ -79,7 +79,6 @@ nav ul {
 
 nav li {
     display: block;
-    border-bottom: 2px solid #444;
 
 }
 
@@ -95,10 +94,14 @@ nav a {
 nav .logo {
     font-size: 1.5rem;
     flex: 1;
+    border-bottom: 2px solid #444;
+
 }
 
 nav .toggle {
     cursor: pointer;
+    border-bottom: 2px solid #444;
+
 }
 
 nav .bars {
@@ -143,12 +146,21 @@ nav .bars {
 .item {
     order: 2;
     width: 100%;
+    max-height: 0em;
     background-color: #1e1e1e;
-    display: none;
+    opacity: 0;
+    transition: max-height 0.25s ease-out, opacity 0.05s;
+    overflow: hidden;
+    border: none;
+
 }
 
 .item.active {
-    display: block;
+    max-height: 4em;
+    opacity: 1;
+    transition: max-height 0.25s ease-in, opacity 0.1s;
+    border-bottom: 2px solid #444;
+
 }
 
 
